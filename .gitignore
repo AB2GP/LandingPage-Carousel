@@ -101,3 +101,7 @@ typings/
 
 # TernJS port file
 .tern-port
+
+# Cypress.io recordings
+cypress/videos/
+cypress/screenshots/

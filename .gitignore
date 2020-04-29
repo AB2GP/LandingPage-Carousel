@@ -105,3 +105,6 @@ typings/
 # Cypress.io recordings
 cypress/videos/
 cypress/screenshots/
+
+# Development and Production bundles
+bundle.*.js

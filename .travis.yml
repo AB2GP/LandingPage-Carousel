@@ -17,5 +17,5 @@ install:
   - npm install
 script:
   - npm run start &
-  - npm run prodbuild
+  - npm run devbuild
   - $(npm bin)/cypress run

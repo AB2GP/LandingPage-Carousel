@@ -10,6 +10,7 @@
     "start": "node ./server/index.js",
     "devbuild": "webpack --config webpack.dev.js -w",
     "prodbuild": "webpack --config webpack.prod.js",
+    "travisbuild": "webpack --config webpack.dev.js",
     "build": "npm run prodbuild && npm run start && cypress run --record"
   },
   "repository": {

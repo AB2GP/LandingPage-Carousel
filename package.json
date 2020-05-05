@@ -1,0 +1,51 @@
+{
+  "name": "landingpage-carousel",
+  "version": "1.0.0",
+  "description": "Carousel of games and new features for the application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "cypress open",
+    "devstart": "nodemon ./server/index.js",
+    "start": "node ./server/index.js",
+    "devbuild": "webpack --config webpack.dev.js -w",
+    "prodbuild": "webpack --config webpack.prod.js",
+    "travisbuild": "webpack --config webpack.dev.js",
+    "build": "npm run prodbuild && npm run start && cypress run --record"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AB2GP/LandingPage-Carousel.git"
+  },
+  "author": "Ben Kidder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AB2GP/LandingPage-Carousel/issues"
+  },
+  "homepage": "https://github.com/AB2GP/LandingPage-Carousel#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "pg": "^8.0.3",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "cypress": "^4.5.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  }
+}
